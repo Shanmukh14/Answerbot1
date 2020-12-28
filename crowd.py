@@ -59,6 +59,7 @@ oot_channel_id_list = [
 "776456074382802995",
 "789837704871149598",
 "790545565628891146",
+"793102254244757517",
 ]
 
 answer_pattern = re.compile(r'(not|n|e)?([1-3]{1})(\?)?(cnf)?(\?)?$', re.IGNORECASE)
@@ -244,8 +245,8 @@ class Bot(discord.Client):
 
         await self.clear_results()
         await self.update_embeds()
-        #await self.change_presence(activity=discord.Game(name='With I Am Best Bot Ever Made By ┻━┻◥ʙ ᴏ ꜱ ꜱ ➈™࿐ ...'))
-        await self.change_presence(activity=discord.Activity(type=1,name=' I Am Captain Cool'))
+        #await self.change_presence(activity=discord.Game(name='With I Am Best Bot Ever Made By shanmukh©®⁷'))
+        await self.change_presence(activity=discord.Activity(type=1,name='shanmukh'))
 
     async def on_message(self, message):
 
@@ -296,7 +297,7 @@ def bot_with_cyclic_update_process(update_event, answer_scores):
     upd_thread.start()
 
     loop = asyncio.get_event_loop()
-    loop.create_task(bot.start('Nzg4MDYxMDQ1ODA0NzYxMTE4.X9eBCg.ePcU1plkajIyy8_RbY0SHmgVT40'))
+    loop.create_task(bot.start('NzkzMTIyNDMyOTA3MDgzODI3.X-nq0w.u8jLBC2Pkmg2Lyh35vv2iH2Y6_0'))
     loop.run_forever()
 
 
@@ -305,7 +306,7 @@ def selfbot_process(update_event, answer_scores):
     selfbot = SelfBot(update_event, answer_scores)
 
     loop = asyncio.get_event_loop()
-    loop.create_task(selfbot.start('NzAzODQ3Nzc5MjE0MDMyODk3.X-CJDA.h5GK4fZeROPFKaFZmjObLCTK-X8',
+    loop.create_task(selfbot.start('NzE5MDI4MjE3ODAwODE4ODUx.X-nbGQ.o0w3F35OMJ_RRusGc9_SRBlu6Gc',
                                    bot=False))
     loop.run_forever()
 
