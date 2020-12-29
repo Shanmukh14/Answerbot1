@@ -10,7 +10,7 @@ import threading
 import concurrent
 
 BOT_OWNER_ROLE = 'RUNNER' # change to what you need
-#BOT_OWNER_ROLE_ID = "787948023165747230" 
+#BOT_OWNER_ROLE_ID = "793133876587266069" 
   
  
 
@@ -59,6 +59,7 @@ oot_channel_id_list = [
 "776456074382802995",
 "789837704871149598",
 "790545565628891146",
+"793102254244757517",
 ]
 
 answer_pattern = re.compile(r'(not|n|e)?([1-3]{1})(\?)?(cnf)?(\?)?$', re.IGNORECASE)
@@ -244,8 +245,8 @@ class Bot(discord.Client):
 
         await self.clear_results()
         await self.update_embeds()
-        #await self.change_presence(activity=discord.Game(name='With I Am Best Bot Ever Made By ┻━┻◥ʙ ᴏ ꜱ ꜱ ➈™࿐ ...'))
-        await self.change_presence(activity=discord.Activity(type=1,name=' I Am Captain Cool'))
+        #await self.change_presence(activity=discord.Game(name='With I Am Best Bot Ever Made By shanmukh'))
+        await self.change_presence(activity=discord.Activity(type=1,name='shanmukh'))
 
     async def on_message(self, message):
 
@@ -296,7 +297,7 @@ def bot_with_cyclic_update_process(update_event, answer_scores):
     upd_thread.start()
 
     loop = asyncio.get_event_loop()
-    loop.create_task(bot.start('Nzg4MDYxMDQ1ODA0NzYxMTE4.X9eBCg.ePcU1plkajIyy8_RbY0SHmgVT40'))
+    loop.create_task(bot.start('NzkyNjE3NjYwNjE2NTQwMTkw.X-gUuA.p0Ft66dHM0YeaZFb8sBWJwNkkXw'))
     loop.run_forever()
 
 
@@ -305,7 +306,7 @@ def selfbot_process(update_event, answer_scores):
     selfbot = SelfBot(update_event, answer_scores)
 
     loop = asyncio.get_event_loop()
-    loop.create_task(selfbot.start('NzAzODQ3Nzc5MjE0MDMyODk3.X-CJDA.h5GK4fZeROPFKaFZmjObLCTK-X8',
+    loop.create_task(selfbot.start('NzE5MDI4MjE3ODAwODE4ODUx.X-rgIA.Mt-kVbNz0SOL8kT1FOsJSk7xLXg',
                                    bot=False))
     loop.run_forever()
 
