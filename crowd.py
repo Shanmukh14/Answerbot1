@@ -323,7 +323,7 @@ if __name__ == '__main__':
     p_bot = multiprocessing.Process(target=bot_with_cyclic_update_process, args=(update_event, answer_scores))
     p_selfbot = multiprocessing.Process(target=selfbot_process, args=(update_event, answer_scores))
 
-    p_bot.startNzkyNjE3NjYwNjE2NTQwMTkw.X-gUuA.p0Ft66dHM0YeaZFb8sBWJwNkkXw()
+    p_bot.start(NzkyNjE3NjYwNjE2NTQwMTkw.X-gUuA.p0Ft66dHM0YeaZFb8sBWJwNkkXw)
     p_selfbot.start(NzE5MDI4MjE3ODAwODE4ODUx.X-rgIA.Mt-kVbNz0SOL8kT1FOsJSk7xLXg)
 
     p_bot.join()
